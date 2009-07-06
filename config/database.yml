@@ -1,0 +1,17 @@
+development:
+  adapter: postgresql
+  database: presenter_example_development
+  username: presenter_example
+  password: 
+
+test:
+  adapter: postgresql
+  database: presenter_example_test
+  username: presenter_example
+  password: 
+
+production:
+  adapter: postgresql
+  database: presenter_example_production
+  username: presenter_example
+  password: 

@@ -1,0 +1,18 @@
+<p>
+  <b>User:</b>
+  <%=h @user_email.user_id %>
+</p>
+
+<p>
+  <b>Email address:</b>
+  <%=h @user_email.email_address %>
+</p>
+
+<p>
+  <b>Is primary:</b>
+  <%=h @user_email.is_primary %>
+</p>
+
+
+<%= link_to 'Edit', edit_user_email_path(@user_email) %> |
+<%= link_to 'Back', user_emails_path %>

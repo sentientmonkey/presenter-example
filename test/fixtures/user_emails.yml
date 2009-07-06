@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  user_id: 1
+  email_address: MyString
+  is_primary: false
+
+two:
+  user_id: 1
+  email_address: MyString
+  is_primary: false

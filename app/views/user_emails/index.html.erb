@@ -1,0 +1,24 @@
+<h1>Listing user_emails</h1>
+
+<table>
+  <tr>
+    <th>User</th>
+    <th>Email address</th>
+    <th>Is primary</th>
+  </tr>
+
+<% @user_emails.each do |user_email| %>
+  <tr>
+    <td><%=h user_email.user_id %></td>
+    <td><%=h user_email.email_address %></td>
+    <td><%=h user_email.is_primary %></td>
+    <td><%= link_to 'Show', user_email %></td>
+    <td><%= link_to 'Edit', edit_user_email_path(user_email) %></td>
+    <td><%= link_to 'Destroy', user_email, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New user_email', new_user_email_path %>

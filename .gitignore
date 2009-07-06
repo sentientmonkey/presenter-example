@@ -1,0 +1,6 @@
+log/*
+tmp/sessions/*
+tmp/pids/*
+var/images/*
+*.swp
+*.swo
