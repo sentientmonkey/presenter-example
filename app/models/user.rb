@@ -10,6 +10,10 @@ class User < ActiveRecord::Base
 
   attr_accessor :password
 
+  def primary_email
+    user_emails.primary.first
+  end
+
   private
 
   def encrypt_password_before_save

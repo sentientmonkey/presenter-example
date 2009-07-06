@@ -62,7 +62,6 @@ class Presenter
     rescue ActiveRecord::RecordInvalid => e
       @@delegates.each do |d|
         self.send(:"#{d}").errors.each do |attr,msg|
-          logger.debug "#{attr}, #{msg}"
           unless errors.on(:"#{attr}")
             self.errors.add(attr, msg)
           end

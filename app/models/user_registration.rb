@@ -21,6 +21,7 @@ class UserRegistration < Presenter
     User.transaction do
       user.save!
       user_email.save!
+      Notifications.deliver_signup(user)
     end 
   end
 

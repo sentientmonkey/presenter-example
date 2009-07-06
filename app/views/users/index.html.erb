@@ -4,8 +4,6 @@
   <tr>
     <th>First name</th>
     <th>Last name</th>
-    <th>Encrypted password</th>
-    <th>Salt</th>
     <th>Joined at</th>
     <th>Is admin</th>
   </tr>
@@ -14,8 +12,6 @@
   <tr>
     <td><%=h user.first_name %></td>
     <td><%=h user.last_name %></td>
-    <td><%=h user.encrypted_password %></td>
-    <td><%=h user.salt %></td>
     <td><%=h user.joined_at %></td>
     <td><%=h user.is_admin %></td>
     <td><%= link_to 'Show', user %></td>
